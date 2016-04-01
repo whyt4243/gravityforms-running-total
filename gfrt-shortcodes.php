@@ -47,14 +47,6 @@ class GFRT_Shortcodes {
 
 		return $dollar_amount;
 	}
-
-	function currency_symbol() {
-		setlocale( LC_MONETARY, get_locale() );
-		$local_currency = localeconv();
-		$cs             = $local_currency[ currency_symbol ];
-
-		return $cs;
-	}
 }
 
 new GFRT_Shortcodes();
