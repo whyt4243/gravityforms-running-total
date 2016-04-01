@@ -36,17 +36,13 @@ class GFRT_Shortcodes {
 			$total += $single_amount;
 
 		}
-		// grabs the currency symbol from WP
-		$cs = $this->currency_symbol();
 
-		// i18n'ing the number
-		$formatted_number = number_format_i18n( $total, 2 );
-
-		// appends currency symbol
-		$dollar_amount = $cs . $formatted_number;
-
-		return $dollar_amount;
+		return $total;
 	}
+
+ 		
+
 }
+
 
 new GFRT_Shortcodes();
